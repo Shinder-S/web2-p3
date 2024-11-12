@@ -11,16 +11,16 @@ Integrantes:
 http://localhost/WEB-2APIRESTful/api/profesionales
 
 
-* Características del Proyecto
+* Características del Proyecto 
 
-    Gestión de Profesionales: CRUD de profesionales médicos, con opción de filtrado por año de incorporación.
+        Gestión de Profesionales: CRUD de profesionales médicos, con opción de filtrado por año de incorporación.
 
 * Estructura del Proyecto
 
-    Database.php: Clase para la conexión a la base de datos.
-    Router.php: Archivo de enrutamiento que permite definir y gestionar rutas para la API.
-    ProfesionalesController.php: Controlador que maneja las operaciones CRUD de los profesionales.
-    APIView.php: Clase que gestiona las respuestas en formato JSON.
+        Database.php: Clase para la conexión a la base de datos.
+        Router.php: Archivo de enrutamiento que permite definir y gestionar rutas para la API.
+        ProfesionalesController.php: Controlador que maneja las operaciones CRUD de los profesionales.
+        APIView.php: Clase que gestiona las respuestas en formato JSON.
 
 ## Rutas de la API
 
