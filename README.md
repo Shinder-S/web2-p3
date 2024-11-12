@@ -8,15 +8,15 @@ Integrantes:
 - Santiago Shinder 36786244
 
 
-http://localhost/WEB-2APIRESTful/api/profesionales
+http://localhost/WEB-2ApiRestful/api/professionals
 
 
-* Características del Proyecto 
+- Características del Proyecto 
 
         Gestión de Profesionales: CRUD de profesionales médicos, con opción de filtrado por año de incorporación.
 
-* Estructura del Proyecto
-
+- Estructura del Proyecto
+        
         Database.php: Clase para la conexión a la base de datos.
         Router.php: Archivo de enrutamiento que permite definir y gestionar rutas para la API.
         ProfesionalesController.php: Controlador que maneja las operaciones CRUD de los profesionales.
@@ -26,43 +26,43 @@ http://localhost/WEB-2APIRESTful/api/profesionales
 
 Profesionales
 
-    GET /profesionales - Muestra todos los profesionales.
-    GET /profesionales/:ID - Muestra un profesional por ID.
-    POST /profesionales - Agrega un nuevo profesional.
-    DELETE /profesionales/:ID - Elimina un profesional por ID.
-    PUT /profesionales/:ID - Actualiza un profesional por ID.
-    GET /profesionales/filter/:year - Filtra profesionales por año de incorporación.
+    GET /professionals - Muestra todos los profesionales.
+    GET /professionals/:ID - Muestra un profesional por ID.
+    POST /professionals - Agrega un nuevo profesional.
+    DELETE /professionals/:ID - Elimina un profesional por ID.
+    PUT /professionals/:ID - Actualiza un profesional por ID.
+    GET /professionals/filter/:year - Filtra profesionales por año de incorporación.
 
 Ejemplo de uso
 
-# Obtener todos los profesionales (GET /profesionales):
+# Obtener todos los profesionales (GET /professionals):
 
-curl -X GET http://localhost/hospital_api/profesionales
+curl -X GET http://localhost/hospital_api/professionals
 
-# Obtener un profesional por ID (GET /profesionales/:ID):
+# Obtener un profesional por ID (GET /professionals/:ID):
 
-curl -X GET http://localhost/hospital_api/profesionales/1
+curl -X GET http://localhost/hospital_api/professionals/1
 
-# Agregar un nuevo profesional (POST /profesionales):
+# Agregar un nuevo profesional (POST /professionals):
 
 curl -X POST -H "Content-Type: application/json" \
--d '{"nombre":"Carlos", "apellido":"Gómez", "especialidad":"Cardiología", "incorporacion":"2023-05-01"}' \
-http://localhost/hospital_api/profesionales
+-d '{"name":"Carlos", "last_name":"Gómez", "specialty":"Cardiología", "incorporation":"2023-05-01"}' \
+http://localhost/hospital_api/professionals
 
-# Eliminar un profesional por ID (DELETE /profesionales/:ID):
+# Eliminar un profesional por ID (DELETE /professionals/:ID):
 
-curl -X DELETE http://localhost/hospital_api/profesionales
+curl -X DELETE http://localhost/hospital_api/professionals
 
-# Actualizar un profesional por ID (PUT /profesionales/:ID):
+# Actualizar un profesional por ID (PUT /professionals/:ID):
 
 curl -X PUT -H "Content-Type: application/json" \
--d '{"nombre":"Carlos", "apellido":"Gómez", "especialidad":"Neurología", "incorporacion":"2023-05-01"}' \
-http://localhost/hospital_api/profesionales/1
+-d '{"name":"Carlos", "last_name":"Gómez", "specialty":"Cardiología", "incorporation":"2023-05-01"}' \
+http://localhost/hospital_api/professionals/1
 
 
-# Filtrar profesionales por año de incorporación (GET /profesionales/filter/:year):#
+# Filtrar profesionales por año de incorporación (GET /professionals/filter/:year):#
 
-curl -X GET http://localhost/hospital_api/profesionales/filter/2023
+curl -X GET http://localhost/hospital_api/professionals/filter/2023
 
 
 - Consideraciones
